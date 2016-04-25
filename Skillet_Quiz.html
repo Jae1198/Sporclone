@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<link rel="shortcut icon" href="http://example.com/favicon.ico" />
+<!-- a. -->
+<title>Sporclone: Skillet Band Members</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c. "Independence Day | Fourth of July | July 4th
+var answers = ["Korey Cooper | Korey | Korey Pingitore | Koreisma", "John Cooper | John", "Jen Ledger | Jen", "Jonathan Salas | Salas", "Seth Morrison | Seth", "Ken Steorts | Ken", "Ben Kasica | Ben", "Kevin Haaland | Kevin", "Trey McClurkin | Trey", "Lori Peters | Lori", "Jonathan Chu | Chu", "Lacey Sturm | Lacey | Lacey Mosley"];
+
+// d.
+var time_limit = 150; // in seconds
+
+
+
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+
+<header>
+    <h1>Sporclone</h1>
+    <p>Click The Play Button to Listen to Hero by Skillet</p>
+    <audio controls loop>
+    <source src="audio/Hero.ogg" type="audio/ogg">
+    </audio>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+             <li><a href="Arch_Enemy_Quiz.html">Arch Enemy Band Members Quiz</a></li>
+            <li><a href="Pvris_Quiz.html">Pvris Songlist Quiz</a></li>
+            <li><a href="Tight_Ends_Quiz.html">Top 10 Greatest Tight Ends of All Time</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/skillet.jpg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Skillet Band Members (12)</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="Play Game">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter Name</h3>
+
+            <!-- k.  -->
+            <input id="guess" onkeyup="check()" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><span id="answer0"></span></td>
+        <td><span id="answer1"></span></td>
+        <td><span id="answer2"></span></td>
+        <td><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><span id="answer4"></span></td>
+        <td><span id="answer5"></span></td>
+        <td><span id="answer6"></span></td>
+        <td><span id="answer7"></span></td>
+        </tr>
+        
+        
+        <tr>
+            <td><span id="answer8"></span></td>
+            <td><span id="answer9"></span></td>
+            <td><span id="answer10"></span></td>
+            <td><span id="answer11"></span></td>
+        </tr>
+        
+        </table>
+
+    </section>
+
+    <footer>
+        <p>Quiz material and styling are my own. However, I do not own any of the images, names, etc. used in this quiz.</p>
+
+        
+        <p>Skillet Quiz by J. Curtis</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
